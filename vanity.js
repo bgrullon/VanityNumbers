@@ -248,7 +248,7 @@ async function getCallerData(callersNumber) {
     dbClient.query(
       {
         TableName: "vanity",
-        KeyConditionExpression: "callers_number = :1cnum",
+        KeyConditionExpression: "callers_number = :cnum",
         ExpressionAttributeValues: {
           ":cnum": callersNumber,
         },
