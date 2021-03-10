@@ -87,6 +87,8 @@ function convertToVanity(phoneNum) {
   return finalList;
 }
 
+// a shuffle for the vanity numbers to make sure
+//if you call with the same number you get different results
 function shuffle(arr) {
   var shuffledArr = arr,
     len = arr.length,
@@ -246,7 +248,7 @@ async function getCallerData(callersNumber) {
     dbClient.query(
       {
         TableName: "vanity",
-        KeyConditionExpression: "callers_number = :cnum",
+        KeyConditionExpression: "callers_number = :1cnum",
         ExpressionAttributeValues: {
           ":cnum": callersNumber,
         },
