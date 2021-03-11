@@ -1,6 +1,6 @@
 # VanityNumbers
 Vanity Number Generator
-* phone number to my amazon connect instance is +1 281-220-1392 *
+* phone number to my amazon connect instance is **+1 281-220-1392**
 
 ## Setup
 
