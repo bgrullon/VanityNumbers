@@ -20,6 +20,19 @@ Vanity Number Generator
 - Lastly, make sure to have an Amazon Connect account and the contact flow used for this app can be found in the folder **contact flow**
   - you will need to add the lambda you just created to your contact flow
   - https://docs.aws.amazon.com/connect/latest/adminguide/connect-lambda-functions.html#add-lambda-function
+  - If you want to test the lambda in aws use the object below
+  ```
+  {
+  "Details": {
+    "ContactData": {
+      "CustomerEndpoint": {
+        "Address": "+1234567890"
+      }
+    }
+  },
+  "Name": "ContactFlowEvent"
+  }
+  ```
 
 ## Implementation
 
