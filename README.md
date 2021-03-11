@@ -39,3 +39,6 @@ A lot of what i implemented was using tools i have never used before which made 
 
 One shortcut that i decided to take was with skipping the number if it was 1 and 0. This is bad for production because if a caller called with all 1s or all 0s then it would break the app and return nothing. For Amazon Connect contact flow i made it too simple and could have created a better caller experience from start to finish. I also kept the entire app in one js file which is a little messy and should be split into files based on purpose.
 
+## What would I have done with more time ?
+
+I would finalized a working web app and deployed to show the most recent users. I tried to approach that in so many different ways but was met with constant obstacles that made that objective very time consuming. I also would have added many ways to make this more secure like adding a login feature with aws cognito or restricting caller access to the lambda. I would have liked to make a majority of the deployment process more automated, possibly by utilizing codebuild and CI/CD processes to help with future commits and builds. I definitely would have liked to see some statistics on how many callers used the app, or maybe some of the best vanity numbers generated and saved it do a dashboard like new relic.
