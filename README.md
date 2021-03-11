@@ -29,6 +29,8 @@ When it came to choosing 5 to save, i just picked the first 5 that had atleast h
 
 As for the Amazon Connect contact flow, I just invoked the lambda immediately once called, explained the app, responded with the first 3 entires in the database for that caller, and after the response, i gave my farewells and ended the call to keep it simple.
 
+![Architecture Diagram](vanityArchitecture.pdf)
+
 ## Struggles
 
 A lot of what i implemented was using tools i have never used before which made this very exciting. Getting set up with DynamoDB and understanding how to save and retreive items proved difficult. Then i learned about DynamoDB Client and it made adding and querying items much easier. The next hurdle was the actual logic in deciding how to generate vanity numbers. First issue was dealing with the number 1 and 0 because they do not have any letters. I chose to just skip iteration on those two numbers because it was causing complications when trying to generate vanity numbers. 
