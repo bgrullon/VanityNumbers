@@ -8,4 +8,4 @@ Resources:
     Properties:
       Handler: vanity.handler
       Runtime: nodejs14.x
-      Timeout: 600
+      Timeout: 600                       
